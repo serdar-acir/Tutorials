@@ -7,7 +7,7 @@ nav:
         - Available Tools:
             - Bioinformatics: tosun/bio.md
             - Material Science: tosun/material.md
-            - Machine Learning: tosun/learning.md	
+            - Machine Learning: tosun/learning.md
             - Data Science: tosun/data.md
     - Using SUNUM Cluster:
         - Quickstart: sunum/index.md
