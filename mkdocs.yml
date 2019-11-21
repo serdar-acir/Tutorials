@@ -6,9 +6,9 @@ nav:
         - Scheduling with SLURM: tosun/slurm.md
         - Available Tools:
             - Bioinformatics: tosun/bio.md
-    	    - Material Science: tosun/material.md
-    	    - Machine Learning: tosun/learning.md	
-    	    - Data Science: tosun/data.md
+            - Material Science: tosun/material.md
+            - Machine Learning: tosun/learning.md	
+            - Data Science: tosun/data.md
     - Using SUNUM Cluster:
         - Quickstart: sunum/index.md
         - Scheduling with SLURM: sunum/slurm.md
