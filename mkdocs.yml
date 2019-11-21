@@ -3,19 +3,19 @@ nav:
     - SU-HPC: index.md
     - Using TOSUN Cluster:
         - Quickstart: tosun/index.md
-    	- Scheduling with SLURM: tosun/slurm.md
-    	- Available Tools:
-          - Bioinformatics: tosun/bio.md
-    	  - Material Science: tosun/material.md
-    	  - Machine Learning: tosun/learning.md	
-    	  - Data Science: tosun/data.md
+        - Scheduling with SLURM: tosun/slurm.md
+        - Available Tools:
+            - Bioinformatics: tosun/bio.md
+    	    - Material Science: tosun/material.md
+    	    - Machine Learning: tosun/learning.md	
+    	    - Data Science: tosun/data.md
     - Using SUNUM Cluster:
         - Quickstart: sunum/index.md
         - Scheduling with SLURM: sunum/slurm.md
         - Available Tools:
-          - Bioinformatics: sunum/bio.md
-          - Material Science: sunum/material.md
-          - Machine Learning: sunum/learning.md
-          - Data Science: sunum/data.md
+            - Bioinformatics: sunum/bio.md
+            - Material Science: sunum/material.md
+            - Machine Learning: sunum/learning.md
+            - Data Science: sunum/data.md
     - About: about.md
 theme: readthedocs
