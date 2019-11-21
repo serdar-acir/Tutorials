@@ -1,8 +1,9 @@
 site_name: Sabancı HPC Tutorials
 nav:
-    - Home: index.md
-    - HPC Tools: hpc.md
+    - Quickstart: index.md
+    - Using SLURM: hpc.md
     - Bioinformatics Tools: bio.md
-    - Materials Science Tools: material.md
+    - MatScience Tools: material.md
+    - Engineering Tools: engineer.md
     - About: about.md
 theme: readthedocs
