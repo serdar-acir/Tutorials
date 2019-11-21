@@ -1,7 +1,0 @@
-site_name: Sabancı HPC Tutorials
-nav:
-    - Home: index.md
-    - HPC Tools: hpc.md
-    - Bioinformatics Tools: bio.md
-    - About: about.md
-theme: readthedocs
