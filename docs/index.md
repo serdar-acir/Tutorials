@@ -1,7 +1,10 @@
 # FENS HPC CLUSTER START GUIDE
 
 ## Getting a Cluster Account  
-In order to get an account in Tosun cluster, send an email to [support@compecta.com](mailto:support@compecta.com) along with the name of the professor you are working with since the accounts are created under groups of professors.
+In order to get an account in Tosun cluster, send an email to [support@compecta.com](mailto:support@compecta.com) along with the name of the professor you are working with since the accounts are created under groups of professors.  
+  
+CompectA support will provide a username and a password. Upon first login, change your password with `passwd` command.
+
 
 ## New User Warnings
 
