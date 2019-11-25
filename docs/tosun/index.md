@@ -1,6 +1,3 @@
-[![Documentation Status](https://readthedocs.org/projects/su-hpc-tutorials/badge/?version=latest)](https://su-hpc-tutorials.readthedocs.io/en/latest/?badge=latest)
-      
-
 # Sabancı HPC Tutorials
 
 ## Getting into Tosun Cluster
