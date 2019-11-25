@@ -1,5 +1,8 @@
 # FENS HPC CLUSTER START GUIDE
 
+## Getting a Cluster Account  
+In order to get an account in Tosun cluster, send an email to [support@compecta.com](mailto:support@compecta.com) along with the name of the professor you are working with since the accounts are created under groups of professors.
+
 ## New User Warnings
 
 - If you have never used a Cluster, or are not familiar with this cluster, YOU WILL WANT to read and follow the examples below to become familiar with how to run jobs on HPC. It is a common practice by new users to ignore this manual and simply try to run jobs without understanding what they are doing. Such carelessness can and WILL easily impact hundreds/thousands of critical jobs and users currently running on the cluster. If your actions compromise the health of the HPC cluster, your account will be LOCKED so please make sure you run through the examples below before you embark on running jobs.
@@ -79,11 +82,16 @@ If you aren’t sure what cygwin is, you can safely ignore the above line.
 
 
 
-Use ssh on the command line
+Use `ssh` on the command line
 
+If you are outside of the campus:  
 
-
-ssh username@IP
+`ssh username@flow.sabanciuniv.edu`  
+Then  
+`ssh username@IP`  
+  
+If you are in the campus:  
+`ssh username@IP`
 
 Note: Username is your HPC username
 
@@ -113,9 +121,9 @@ Use the scp on the command line
 
 
 
-<span class="c7 c46">scp file-to-name USERNAME@IP<span class="c57 c46 c62 c7">:~/HOME_DIR/SUB_FOLDER/new-filename
+`scp file-to-name USERNAME@IP:~/HOME_DIR/SUB_FOLDER/new-filename`
 
-This will copy the file to a SUB_FOLDER and renaming it to new-filename
+This will copy the file to a **SUB_FOLDER** and renaming it to new-filename
 
 
 
@@ -144,7 +152,7 @@ Use a command line editor such as ‘vi’  or ‘emacs’. Here are some cheat
 
 
 
-Home Folder is located at /cta/users/<username>/. This folder is for long term storage to keep your job files. It is a general purpose distributed file system.
+Home Folder is located at `/cta/users/username/`. This folder is for long term storage to keep your job files. It is a general purpose distributed file system.
 
 
 
@@ -192,7 +200,7 @@ Users wanting to use the HPC need to understand how to use the queueing system, 
 
 
 
-Jobs are managed by a Resource Manager on the HPC Cluster. SABANCI HPC Cluster uses SLURM Resource Manager for this purpose.
+Jobs are managed by a Resource Manager on the HPC Cluster. TOSUN and SUNUM clusters uses SLURM Resource Manager for this purpose.
 
 
 
@@ -200,11 +208,11 @@ You need to login (using ssh) to the HPC Cluster and submit jobs using sbatch c
 
 
 
-## SLURM Job Submission S
+## SLURM Job Submission
 
 
 
-You will find SLURM submission script templates in a the folder: /cta/share/jobscripts
+You will find SLURM submission script templates in a the folder: `/cta/share/jobscripts`
 
 
 
@@ -212,19 +220,20 @@ Copy the one you need to your work folder and modify it as required:
 
 
 
-mkdir /cta/users/<username>/workfolder
+`mkdir /cta/users/<username>/workfolder`
 
 
 
-cd /cta/users/<username>/workfolder/
+`cd /cta/users/<username>/workfolder/`
 
 
 
-cp /cta/share/jobscripts/example_submit.sh /cta/users/<username>/workfolder/my_experiment.sh
+`cp /cta/share/jobscripts/example_submit.sh /cta/users/<username>/workfolder/my_experiment.sh`
 
 
-
-vim my_experiment.sh
+`emacs my_experiment.sh`  
+OR  
+`vim my_experiment.sh`
 
 
 
@@ -266,116 +275,12 @@ These partitions and limits are subject to change in near future. Please check b
 
 ## Essential SLURM Commands
 
-<table class="c52">
-
-<tbody>
-
-<tr class="c56">
-
-<td class="c49 c68" colspan="1" rowspan="1">
-
-<span class="c43 c40 c30 c39">Command
-
-</td>
-
-<td class="c16 c68" colspan="1" rowspan="1">
-
-<span class="c43 c40 c30 c39">Description
-
-</td>
-
-</tr>
-
-<tr class="c56">
-
-<td class="c49" colspan="1" rowspan="1">
-
-<span class="c40 c30 c55 c7">sbatch<span class="c7 c23">
-
-<span class="c5">sbatch [script]
-
-</td>
-
-<td class="c16" colspan="1" rowspan="1">
-
-<span class="c15 c7">Submit a batch job
-
-<span class="c51 c7">
-Example:<span class="c30 c7">
-<span class="c5">$ sbatch job.sub
-
-</td>
-
-</tr>
-
-<tr class="c56">
-
-<td class="c49" colspan="1" rowspan="1">
-
-<span class="c40 c30 c7 c55">scancel<span class="c23 c7">
-
-<span class="c5">scancel [job_id]
-
-</td>
-
-<td class="c16" colspan="1" rowspan="1">
-
-<span class="c30 c7">Kill a running job or cancel queued one
-<span class="c51 c7">
-Example:<span class="c30 c7">
-<span class="c5">$ scancel 123456
-
-</td>
-
-</tr>
-
-<tr class="c56">
-
-<td class="c49" colspan="1" rowspan="1">
-
-<span class="c40 c30 c55 c7">squeue<span class="c23 c7">
-
-<span class="c5">squeue
-
-</td>
-
-<td class="c16" colspan="1" rowspan="1">
-
-<span class="c30 c7">List running or pending jobs
-<span class="c51 c7">
-Example:<span class="c30 c7">
-<span class="c5">$ squeue
-
-</td>
-
-</tr>
-
-<tr class="c56">
-
-<td class="c49" colspan="1" rowspan="1">
-
-<span class="c40 c30 c55 c7">squeue -u userid<span class="c23 c7">
-
-<span class="c5">squeue -u [userid]
-
-</td>
-
-<td class="c16" colspan="1" rowspan="1">
-
-<span class="c7 c30">List running or pending jobs
-<span class="c7 c51">
-Example:<span class="c30 c7">
-<span class="c5">$ squeue -u john
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-
+| Command | Description | Example
+| --------| ----------- | --------|
+| `sbatch [script]`| Submit a batch job | `$ sbatch job.sub` |
+| `scancel [job_id]` | Kill a running job or cancel queued one | `$ sbatch job.sub` |
+`squeue` | List running or pending jobs | `$ squeue` |
+| `squeue -u [userid]` | List running or pending jobs | `$ squeue -u mdemirkol`
 
 
 
@@ -383,7 +288,7 @@ Example:<span class="c30 c7">
 
 
 
-The job flags are used with SBATCH command.  The syntax for the SLURM directive in a script is  "#SBATCH <flag>".  Some of the flags are used with the srun and salloc commands, as well for interactive jobs.
+The job flags are used with `SBATCH` command.  The syntax for the SLURM directive in a script is  `#SBATCH`.  Some of the flags are used with the `srun` and `salloc` commands, as well for interactive jobs.
 
 
 
@@ -835,7 +740,7 @@ For example, to run an X terminal:
 
 `srun --x11 -A users -p short -n1 --qos=users --pty $SHELL`
 
-Note that the user must have X11 forwarded to the login node for this to work -- this can be checked by running xclock at the command line.
+Note that the user must have X11 forwarded to the login node for this to work -- this can be checked by running `xclock` at the command line.
 
 Additionally, the --x11argument can be augmented in this fashion --x11=[batch|first|last|all] to the following effects:
 
@@ -1400,7 +1305,7 @@ Please follow the links for more...
 
 
 
-*   Please run the module avail command from your ssh console to view a list of available applications.
+*   Please run the `module avail` command from your ssh console to view a list of available applications.
 
 
 
@@ -1409,7 +1314,7 @@ Please follow the links for more...
 
 
 *   Gaussian, Blast, Namd, Gromacs and many more.
-*   Please run the module avail command from your ssh console to view a list of available applications.
+*   Please run the `module avail` command from your ssh console to view a list of available applications.
 
 
 
