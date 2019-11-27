@@ -175,6 +175,7 @@ Some software will only run on a single processor, in which case you will probab
 
 
 
+<<<<<<< HEAD
 # SLURM queuing system
 
 
@@ -208,7 +209,6 @@ Jobs are managed by a Resource Manager on the HPC Cluster. TOSUN and SUNUM clust
 
 
 You need to login (using ssh) to the HPC Cluster and submit jobs using sbatch command.
-
 
 
 
