@@ -1,5 +1,3 @@
-# Sabancı HPC Tutorials
-
 ## Getting into Tosun Cluster
 
 ### Within campus
@@ -8,7 +6,7 @@
 ### From outside of campus
 `ssh username@flow.sabanciuniv.edu`  
 Then  
-`ssh username@tosun`  
+`ssh username@tosun.sabanciuniv.edu`  
 
 ## Tosun Cluster Specifications
 Tosun clusters consists of 1 login, 6 work and 1 GPU nodes. Which specified by:  
