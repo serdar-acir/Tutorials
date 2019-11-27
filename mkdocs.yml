@@ -17,5 +17,6 @@ nav:
             - Material Science: sunum/material.md
             - Machine Learning: sunum/learning.md
             - Data Science: sunum/data.md
-    - About: about.md
+    - FAQ: faq.md
+    - Help: help.md
 theme: readthedocs

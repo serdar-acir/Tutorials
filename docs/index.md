@@ -175,7 +175,6 @@ Some software will only run on a single processor, in which case you will probab
 
 
 
-<<<<<<< HEAD
 # SLURM queuing system
 
 
