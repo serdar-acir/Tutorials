@@ -98,44 +98,29 @@ If you are in the campus:
 
 Note: Username is your HPC username
 
-
-
-## How do I copy files/data to the HPC Machines?
-
-
-
-### Windows
-
-
-
-Use MobaXterm. This is a GUI-based scp client for MS Windows-based computers that has a  drag-and-drop facility and an inbuilt file editor. If you have cygwin installed, you can open a cygwin-terminal and then use ssh the same as Linux and Mac below.
-
-
-
-*   [Download MobaXterm](https://www.google.com/url?q=http://mobaxterm.mobatek.net/documentation.html%232_3_3&sa=D&ust=1570008089852000)
-
-
-
-### Linux and Mac
-
-
-
-Use the scp on the command line
-
-
-
-`scp file-to-name USERNAME@IP:~/HOME_DIR/SUB_FOLDER/new-filename`
-
-This will copy the file to a **SUB_FOLDER** and renaming it to new-filename
-
-
-
 ## Now that I have connected to the HPC System - What do I do now
 
+![image info](folder_struct.png)
 
+An abstract of the file system in TOSUN cluster is given above. When logging into TOSUN cluster, default folder is `your_home_folder`. Home folder have the alias `~`. Navigating through the files is done by `cd` command. Going parent direction is done by `cd ..` and going children direction is done by `cd folder_name`. One can reach from every folder to by giving *relative path* from current folder or *absolute path* of target folder. `pwd` command will give your current folder's absolute path. To illustrate, reaching from `test` folder from `your_home_folder` could be done by  
+`cd ../test`  
+OR
+`cd /cta/test`.
 
-You need to use the Linux command line. Try this [cheat sheet](https://www.google.com/url?q=http://overapi.com/linux/&sa=D&ust=1570008089854000) to get you started.
+- Listing files in current folders is done by `ls` command
+- Moving folders is done by `mv` and `cp` commands.
+  - `mv myscript.sh myscript_old.sh` will rename the file
+  - `mv script.sh ~/` will move it to your home directory.
+  - `cp /cta/share/example/example.sh ~/examples/` will copy `example.sh` to `examples/` directory in your home folder.  
 
+This commands could be executed for every path one have access rights.
+
+### Redirecting Output from/to HPC System
+
+- To review output; `cat` command could be used.
+- To copy the output to your local computer use `scp` command; 
+    - From local `scp username@tosun:/absolute/path/to/file /relative/path/in/local`
+    - From cluster `scp /relative/path/in/local username@local:/absolute/path/to/directory` could be used. 
 
 
 ## How do I edit my files on the HPC system?
