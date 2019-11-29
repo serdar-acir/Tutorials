@@ -1,15 +1,15 @@
-## Getting into Tosun Cluster
+## Getting into TOSUN Cluster
 
 ### Within campus
-`ssh username@tosun`
+`ssh username@10.3.5.102`
 
 ### From outside of campus
 `ssh username@flow.sabanciuniv.edu`  
 Then  
-`ssh username@tosun.sabanciuniv.edu`  
+`ssh username@10.3.5.102`
 
-## Tosun Cluster Specifications
-Tosun clusters consists of 1 login, 6 work and 1 GPU nodes. Which specified by:  
+## TOSUN Cluster Specifications
+TOSUN clusters consists of 1 login, 7 work and 1 GPU nodes. Which specified by:  
 
 | Node  | CPU                                         | # Cores | # Threads | Memory     | GPU        |
 |-------|---------------------------------------------|---------|-----------|------------|------------|
