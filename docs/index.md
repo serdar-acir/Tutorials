@@ -1,7 +1,7 @@
 # FENS HPC CLUSTER START GUIDE
 
 ## Getting a Cluster Account  
-In order to get an account in Tosun cluster, send an email to [support@compecta.com](mailto:support@compecta.com) along with the name of the professor you are working with since the accounts are created under groups of professors.  
+In order to get an account in TOSUN cluster, send an email to [support@compecta.com](mailto:support@compecta.com) along with the name of the professor you are working with since the accounts are created under groups of professors.  
   
 CompectA support will provide a username and a password. Upon first login, change your password with `passwd` command.
 
@@ -166,31 +166,17 @@ Some software will only run on a single processor, in which case you will probab
 
 HPC that are shared among many users typically use a job management system such as Torque, SLURM, SGE or Moab to manage submission and execution of jobs.
 
-
-
 Jobs are not run directly from the command line, the user needs to create a job script which specifies both the required compute resources, libraries and the job’s application that is to be run.
-
-
 
 The script is submitted to the job management system (queueing system) and if the requested resources (processors, memory, etc) are available on the system, the job will by run.
 
-
-
 If not, it will be placed in a queue until such time as the resources do become available. In order to provide a fair share of the resources among users, the priority of jobs in the queue may be varied based on how much resources someone has used, so it is possible that jobs may not run in the order in which they have been submitted to the queue.
-
-
 
 Users wanting to use the HPC need to understand how to use the queueing system, how to create the job submission script, as well as check its progress or delete a job from the queueing system.
 
-
-
 ## Running jobs
 
-
-
-Jobs are managed by a Resource Manager on the HPC Cluster. TOSUN and SUNUM clusters uses SLURM Resource Manager for this purpose.
-
-
+Jobs are managed by a Resource Manager on the HPC Cluster. TOSUN and SUNUM clusters at Sabanci University use SLURM Resource Manager for this purpose.
 
 You need to login (using ssh) to the HPC Cluster and submit jobs using sbatch command.
 
