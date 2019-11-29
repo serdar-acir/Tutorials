@@ -102,9 +102,9 @@ Note: Username is your HPC username
 
 ![image info](folder_struct.png)
 
-An abstract of the file system in TOSUN cluster is given above. When logging into TOSUN cluster, default folder is `your_home_folder`. Home folder have the alias `~`. Navigating through the files is done by `cd` command. Going parent direction is done by `cd ..` and going children direction is done by `cd folder_name`. One can reach from every folder to by giving *relative path* from current folder or *absolute path* of target folder. `pwd` command will give your current folder's absolute path. To illustrate, reaching from `test` folder from `your_home_folder` could be done by  
+An abstract of the file system in TOSUN cluster is given above. When logging into TOSUN cluster, default folder is `your_home_folder`. Home folder have the alias `~`. Navigating through the files is done by `cd` command. Going parent direction is done by `cd ..` and going children direction is done by `cd folder_name`. One can reach from every folder to every folder by giving *relative path* from current folder or *absolute path* of target folder. `pwd` command will give your current folder's absolute path. To illustrate, reaching from `test` folder from `your_home_folder` could be done by  
 `cd ../test`  
-OR
+OR  
 `cd /cta/test`.
 
 - Listing files in current folders is done by `ls` command
