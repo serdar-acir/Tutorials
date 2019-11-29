@@ -1,3 +1,4 @@
+[![Documentation Status](https://readthedocs.org/projects/su-hpc-tutorials/badge/?version=latest)](https://su-hpc-tutorials.readthedocs.io/en/latest/?badge=latest)
 # FENS HPC CLUSTER START GUIDE
 
 ## Getting a Cluster Account  
