@@ -1,4 +1,4 @@
-## TensorFlow
+## TensorFlow1
 An example job for using TensorFlow and the GPU node of TOSUN cluster could be found in folder `/cta/share/tensorflow`.  
 
 After copying the files to your directory with `cp tensorflow_submit.sh test_single_gpu.py ~` command, an example job can be submitted to the GPU node with 
