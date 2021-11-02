@@ -13,17 +13,17 @@ TOSUN clusters consists of 1 login, 7 work and 1 GPU nodes. Which specified by:
 
 | Node  | CPU                                         | # Cores | # Threads | Memory     | GPU          |
 |-------|---------------------------------------------|---------|-----------|------------|--------------|
-| login | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
+| login | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 8       | 16        |  61035 MB  | -            |
 | cn01  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
 | cn02  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
 | cn03  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
-| cn04  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
+| cn04  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | Tesla V100 x2|
 | cn05  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | Tesla K80 x2 |
 | cn06  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | Tesla K80 x2 |
-| cn07  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | 				|
+| cn07  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | RTX A5000 x2	|			|
 | gpu01 | Intel(R) Xeon(R) Gold 5122 CPU @ 3.60GHz X2 | 8       | 16        | 257366 MB  | Tesla V100 x2|
 | mem01 | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X4 | 72      | 144       | 1031504 MB | -            |
-| Total |                                             | 294     | 588       | 2833066 MB |              |
+| Total |                                             | 340     | 664       | 2833066 MB |              |
 
   
 Intel(R) Xeon(R) Gold 6140 CPU in worker have the following compute capabilities(flags):
@@ -34,10 +34,10 @@ fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush 
 
 Tesla V100 GPU have the following specifications:
 
-| Specifications | Tesla V100 |
-| -------------- | ---------- |
-| GPU | GV100 (Volta) |
-| SMs| 80 |
+| Specifications | Tesla V100 | Tesla K80 |
+| -------------- | ---------- |           |
+| GPU | GV100 (Volta) | GK180 (Kepler) |
+| SMs| 80         | 
 | TPCs |  40 |
 | FP32 Cores / SM | 64 |
 | FP32 Cores / GPU | 5120 |
