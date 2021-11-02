@@ -17,7 +17,7 @@ TOSUN clusters consists of 1 login, 7 work and 1 GPU nodes. Which specified by:
 | cn01  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
 | cn02  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
 | cn03  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
-| cn04  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  |Tesla V100sx1 |
+| cn04  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  |Tesla V100s x1|
 | cn05  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  |Tesla K80 x2  |
 | cn06  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  |Tesla K80 x2  |
 | cn07  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  |RTX A5000 x2	|
