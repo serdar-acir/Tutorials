@@ -17,11 +17,11 @@ TOSUN clusters consists of 1 login, 7 work and 1 GPU nodes. Which specified by:
 | cn01  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
 | cn02  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
 | cn03  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
-| cn04  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | Tesla V100 x2|
-| cn05  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | Tesla K80 x2 |
-| cn06  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | Tesla K80 x2 |
-| cn07  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | RTX A5000 x2	|			|
-| gpu01 | Intel(R) Xeon(R) Gold 5122 CPU @ 3.60GHz X2 | 8       | 16        | 257366 MB  | Tesla V100 x2|
+| cn04  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  |Tesla V100sx1 |
+| cn05  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  |Tesla K80 x2  |
+| cn06  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  |Tesla K80 x2  |
+| cn07  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  |RTX A5000 x2	|
+| gpu01 | Intel(R) Xeon(R) Gold 5122 CPU @ 3.60GHz X2 | 8       | 16        | 257366 MB  |Tesla V100 x2 |
 | mem01 | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X4 | 72      | 144       | 1031504 MB | -            |
 | Total |                                             | 340     | 664       | 2833066 MB |              |
 
