@@ -19,4 +19,6 @@ nav:
             - Data Science: sunum/data.md
     - FAQ: faq.md
     - Help: help.md
+    - Kullanım Politikası: HPC_Kullanım_Politikası.md
+    - Feragatname: HPC_Kullanım_Politikası.md
 theme: readthedocs
