@@ -29,14 +29,10 @@ See the page about Slurm Queueing System Commands for more information on creati
 
 Slurm Resource Manager has partitions which are job queues. These partitions has different limits and member nodes. You can see the active partitions and their limits with `sinfo` command on the cluster.
 
-SABANCI HPC Cluster’s Partitions:
-
-These partitions and limits are subject to change in near future. Please check back here again. 
-
-## [The SLURM Cheat Sheet](https://www.google.com/url?q=https://slurm.schedmd.com/pdfs/summary.pdf&sa=D&ust=1570008089861000)
+## [The Slurm Cheat Sheet](https://www.google.com/url?q=https://slurm.schedmd.com/pdfs/summary.pdf&sa=D&ust=1570008089861000)
 
 
-## Essential SLURM Commands
+## Essential Slurm Commands
 
 | Command | Description | Example
 | --------| ----------- | --------|
@@ -46,14 +42,9 @@ These partitions and limits are subject to change in near future. Please check b
 | `squeue -u [userid]` | List running or pending jobs | `$ squeue -u mdemirkol`
 
 
+## Submitting a Slurm Job Script
 
-## Submitting a SLURM Job Script
-
-
-
-The job flags are used with `SBATCH` command.  The syntax for the SLURM directive in a script is  `#SBATCH`.  Some of the flags are used with the `srun` and `salloc` commands, as well for interactive jobs.
-
-
+The job flags are used with `SBATCH` command.  The syntax for the Slurm directive in a script is  `#SBATCH`.  Some of the flags are used with the `srun` and `salloc` commands, as well for interactive jobs.
 
 <a id="t.3dfacbe3b6b4ac376d3dc1e2da925d8ec90b580e"></a><a id="t.1"></a>
 
@@ -435,7 +426,7 @@ The job flags are used with `SBATCH` command.  The syntax for the SLURM directiv
 
 <td class="c35" colspan="1" rowspan="1">
 
-<span class="c43 c45 c7">--mail-user=username@foo.com
+<span class="c43 c45 c7">--mail-user=username@sabanciuniv.edu
 
 </td>
 
@@ -489,17 +480,13 @@ The job flags are used with `SBATCH` command.  The syntax for the SLURM directiv
 
 ## 
 
-## Running a GUI on the Cluster (X11 Forwarding) (soon..)
+## Running a GUI on the Cluster 
 
-
-
-Some applications provide the capability to interact with a graphical user interface (GUI). It is not typical of parallel jobs, but large-memory applications and computationally steered applications can offer such capability. With Slurm, once a resource allocation is granted for an interactive session (or a batch job when the submitting terminal if left logged in), we can use srun to provide X11 graphical forwarding all the way from the compute nodes to our desktop using srun --x11 
+Some applications provide the capability to interact with a graphical user interface (GUI). Large-memory applications and computationally steered applications can offer such capability. With Slurm, once a resource allocation is granted for an interactive session (or a batch job when the submitting terminal if left logged in), we can use `srun` to provide X11 graphical forwarding all the way from the compute nodes to our desktop using srun.
 
 
 
 For example, to run an X terminal:
-
-
 
 `srun --x11 -A users -p short -n1 --qos=users --pty $SHELL`
 
@@ -514,12 +501,7 @@ Additionally, the --x11argument can be augmented in this fashion --x11=[batch|fi
 
 ## Job Reason Codes
 
-
-
 These codes identify the reason that a job is waiting for execution. A job may be waiting for more than one reason, in which case only one of those reasons is displayed.
-
-
-
 
 
 <a id="t.9aa0fe54d84fd9007f94a96abe92ee9227ca6cfc"></a><a id="t.2"></a>
@@ -944,10 +926,6 @@ Please follow the links for more...
 
 ## QoS settings
 
-
-
-
-
 <a id="t.001774065333135c85f7249b6b7fd6da4434d52b"></a><a id="t.3"></a>
 
 <table class="c52">
@@ -1038,43 +1016,29 @@ Please follow the links for more...
 
 
 
-
-
 # <span class="c43 c72 c40">Software
-
-
 
 ## System software
 
-
-
-*   Ubuntu 16.04 LTS  - operating system
-*   [SLURM resource manager](https://www.google.com/url?q=https://slurm.schedmd.com/&sa=D&ust=1570008089922000)
-
+*   Various operating systems are being used in our systems. If you need a particular OS please let us know.
+*   [Slurm resource manager](https://www.google.com/url?q=https://slurm.schedmd.com/&sa=D&ust=1570008089922000)
 
 
 ### Compilers and parallel programming libraries
 
-
-
 *   GNU Compiler (GCC, GFortran)
 *   Java, Python, Perl, Ruby
 *   OpenMPI - library for MPI message passing for use in parallel programming over Infiniband and Ethernet
-*   ...and more. We will be updating this document in future.
+*   ...and more.
 
 ### 
 
 ### Libraries
 
-
-
 *   Please run the `module avail` command from your ssh console to view a list of available applications.
 
 
-
 ### Application software
-
-
 
 *   Gaussian, Blast, Namd, Gromacs and many more.
 *   Please run the `module avail` command from your ssh console to view a list of available applications.
