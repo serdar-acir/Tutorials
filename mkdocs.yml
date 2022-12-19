@@ -6,10 +6,10 @@ nav:
         - Using SunHPC Cluster: sunhpc-index.md
         - Scheduling with Slurm: slurm.md
         - Available Tools:
-            - Matlab: bio.md
-            - Materials Studio: material.md
-            - Comsol: learning.md
-            - Namd: data.md
+            - Matlab: matlab.md
+            - Materials Studio: ms.md
+            - Comsol: comsol.md
+            - Namd: namd.md
             - Tensorflow: tensorflow.md
     - FAQ: faq.md
     - Help: help.md
