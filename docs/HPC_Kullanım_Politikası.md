@@ -1,5 +1,4 @@
-# Sabancı HPC Kümesi Kullanım Politikası
-> ( Türkçe | son güncelleme:2022-03-03)
+# Sabancı HPC Kümesi Kullanım Politikası ( Türkçe)
 - Tüm Sabancı Üniversitesi öğretim üyeleri, öğrencileri ve araştırmacıları yüksek performanslı hesaplama ihtiyacı duymaları durumunda, Sabancı HPC sistemlerini kullanabilir.
 - Dışarıdan kullanıcılar Sabancı Üniversitesi ile bağlantılı akademik veya endüstriyel işbirlikli akademik projelere dahil olmaları durumunda Sabancı HPC sistemlerini kullanabilir.
 - HPC hesabı kullanıcının bağlı olduğu grubun yöneticisi (öğretim üyesi) tarafından HPC web portalı üzerinden açılır veya kapatılır. Kullanıcının temel linux ve temel HPC kullanım bilgisine sahip olduğunu grubun yöneticisi teyit etmiş olur.
