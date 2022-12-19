@@ -1,5 +1,5 @@
 [![Documentation Status](https://readthedocs.org/projects/su-hpc-tutorials/badge/?version=latest)](https://su-hpc-tutorials.readthedocs.io/en/latest/?badge=latest)
-# FENS HPC CLUSTER START GUIDE
+# SABANCI UNIVERSITY HPC CLUSTER QUICKSTART GUIDE
 
 ## Getting a Cluster Account  
 In order to get an account in TOSUN cluster, send an email to [suhpcadmin@sabanciuniv.edu](mailto:suhpcadmin@sabanciuniv.edu) along with the name of the professor you are working with since the accounts are created under groups of professors.  
