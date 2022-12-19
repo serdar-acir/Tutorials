@@ -1,36 +1,26 @@
-## Getting into TOSUN Cluster
+## Accessing the Tosun Cluster
 
 ### Within campus
-`ssh username@10.3.5.102`
+`ssh username@tosun.sabanciuniv.edu`
 
 ### From outside of campus
 `ssh username@flow.sabanciuniv.edu`  
 Then  
-`ssh username@10.3.5.102`
+`ssh username@tosun.sabanciuniv.edu`
 
-## TOSUN Cluster Specifications
-TOSUN clusters consists of 1 login, 7 work and 1 GPU nodes. Which specified by:  
+## Tosun Cluster Specifications
+Sabancı HPC clusters are continuously evolving. To list all the nodes with partition names please use:
+`sinfo --long --Node "%#N %.6D %#P %6t"`
 
-| Node  | CPU                                         | # Cores | # Threads | Memory     | GPU          |
-|-------|---------------------------------------------|---------|-----------|------------|--------------|
-| login | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 8       | 16        |  61035 MB  | -            |
-| cn01  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
-| cn02  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
-| cn03  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  | -            |
-| cn04  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  |Tesla V100s x1|
-| cn05  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  |Tesla K80 x2  |
-| cn06  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  |Tesla K80 x2  |
-| cn07  | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X2 | 36      | 72        | 257366 MB  |RTX A5000 x2	|
-| gpu01 | Intel(R) Xeon(R) Gold 5122 CPU @ 3.60GHz X2 | 8       | 16        | 257366 MB  |Tesla V100 x2 |
-| mem01 | Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz X4 | 72      | 144       | 1031504 MB | -            |
-| Total |                                             | 340     | 664       | 2833066 MB |              |
 
-  
+You need to search the capabilities and performance optimization techniques for the computing resources available at the time of your run.   
+
+For example for CPUs:
 Intel(R) Xeon(R) Gold 6140 CPU in worker have the following compute capabilities(flags):
 
 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb invpcid_single intel_pt ssbd ibrs ibpb stibp kaiser tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx avx512f rdseed adx smap clflushopt clwb avx512cd xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts pku flush_l1d  
 
-### Tesla V100
+For example for Tesla V100:
 
 Tesla V100 GPU have the following specifications:
 
@@ -53,6 +43,5 @@ Tesla V100 GPU have the following specifications:
 | Shared Memory Size / SM | Configurable up to 96 KB |
 | Register File Size / SM | 256KB |
 | Register File Size / GPU | 20480 KB | 
-
 
 To tune your GPU application for volta architecture, take a look at this guide: [Volta Tuning Guide](https://docs.nvidia.com/cuda/volta-tuning-guide/index.html)
