@@ -24,7 +24,7 @@ For example for Tesla V100:
 
 Tesla V100 GPU have the following specifications:
 
-| Specifications | Tesla V100 | Tesla K80 |
+| Specifications | Tesla V100 | Tesla K80 |<br>
 | -------------- | ---------- |           |
 | GPU | GV100 (Volta) | GK180 (Kepler) |
 | SMs| 80         | 
