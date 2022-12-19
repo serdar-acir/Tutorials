@@ -20,5 +20,5 @@ nav:
     - FAQ: faq.md
     - Help: help.md
     - Kullanım Politikası: HPC_Kullanım_Politikası.md
-    - Feragatname: HPC_Kullanım_Politikası.md
+    - Feragatname: Feragetname.md
 theme: readthedocs
