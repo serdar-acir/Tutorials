@@ -3,7 +3,7 @@ nav:
     - Quickstart: index.md
     - Tutorials:
         - Using Tosun Cluster: tosun-index.md
-        - Using SunHPC Cluster: sunum-index.md
+        - Using SunHPC Cluster: sunhpc-index.md
         - Scheduling with Slurm: slurm.md
         - Available Tools:
             - Matlab: bio.md
