@@ -25,23 +25,23 @@ For example for Tesla V100:
 Tesla V100 GPU have the following specifications:
 
 | Specifications | Tesla V100 | Tesla K80 |<br>
-| -------------- | ---------- |           |
-| GPU | GV100 (Volta) | GK180 (Kepler) |
-| SMs| 80         | 
-| TPCs |  40 |
-| FP32 Cores / SM | 64 |
-| FP32 Cores / GPU | 5120 |
-| FP64 Cores / SM | 32 |
-| FP64 Cores / GPU | 2560 |
-| Tensor Cores / SM | 8 |
-| Tensor Cores / GPU | 640 |
-| Peak FP32 TFLOPS | 15.7 |
-| Peak FP64 TFLOPS | 7.8 |
-| Peak Tensor TFLOPS | 125 |
-| Memory Size | 32 GB |
-| L2 Cache Size | 6144 KB |
-| Shared Memory Size / SM | Configurable up to 96 KB |
-| Register File Size / SM | 256KB |
-| Register File Size / GPU | 20480 KB | 
+| -------------- | ---------- |           |<br>
+| GPU | GV100 (Volta) | GK180 (Kepler) |<br>
+| SMs| 80         | <br>
+| TPCs |  40 |<br>
+| FP32 Cores / SM | 64 |<br>
+| FP32 Cores / GPU | 5120 |<br>
+| FP64 Cores / SM | 32 |<br>
+| FP64 Cores / GPU | 2560 |<br>
+| Tensor Cores / SM | 8 |<br>
+| Tensor Cores / GPU | 640 |<br>
+| Peak FP32 TFLOPS | 15.7 |<br>
+| Peak FP64 TFLOPS | 7.8 |<br>
+| Peak Tensor TFLOPS | 125 |<br>
+| Memory Size | 32 GB |<br>
+| L2 Cache Size | 6144 KB |<br>
+| Shared Memory Size / SM | Configurable up to 96 KB |<br>
+| Register File Size / SM | 256KB |<br>
+| Register File Size / GPU | 20480 KB | <br>
 
 To tune your GPU application for volta architecture, take a look at this guide: [Volta Tuning Guide](https://docs.nvidia.com/cuda/volta-tuning-guide/index.html)
