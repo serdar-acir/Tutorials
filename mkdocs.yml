@@ -1,19 +1,17 @@
-site_name: Sabancı SuperComputing Center
+site_name: Sabancı University SuperComputing Center
 nav:
     - Quickstart Tutorial: index.md
     - Using The Clusters:
-        - Using Tosun Cluster: tosun/index.md
-        - Using SunHPC Cluster: sunum/index.md
-        - Scheduling with SLURM: tosun/slurm.md
+        - Using Tosun Cluster: tosun-index.md
+        - Using SunHPC Cluster: sunum-index.md
+        - Scheduling with SLURM: slurm.md
         - Available Tools:
-            - Bioinformatics: tosun/bio.md
-            - Material Science: tosun/material.md
-            - Machine Learning: tosun/learning.md
-            - Data Science: tosun/data.md
-    - Using SUNUM Cluster:
-        - Quickstart: 
+            - Matlab: bio.md
+            - Materials Studio: material.md
+            - Comsol: learning.md
+            - Namd: data.md
     - FAQ: faq.md
     - Help: help.md
-    - SU-HPC Kullanım Politikası: docs/HPC_Kullanım_Politikası.md
-    - Feragatname: docs/Feragetname.md
+    - SU-HPC Kullanım Politikası: HPC_Kullanım_Politikası.md
+    - Feragatname: Feragetname.md
 theme: readthedocs
