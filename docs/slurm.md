@@ -1,24 +1,15 @@
-## SLURM Job Submission at TOSUN Cluster
+## Slurm Job Submission at SU-HPC Cluster
 
-
-
-You will find SLURM submission script templates in a the folder: `/cta/share/jobscripts`
-
-
+On Tosun cluster you can find Slurm submission script templates in a the folder: `/cta/share/jobscripts`
 
 Copy the one you need to your work folder and modify it as required:
 
 
+`mkdir /$HOME/<username>/workfolder`
 
-`mkdir /cta/users/<username>/workfolder`
+`cd /$HOME/<username>/workfolder/`
 
-
-
-`cd /cta/users/<username>/workfolder/`
-
-
-
-`cp /cta/share/jobscripts/example_submit.sh /cta/users/<username>/workfolder/my_experiment.sh`
+`cp /cta/share/jobscripts/example_submit.sh /$HOME/<username>/workfolder/my_experiment.sh`
 
 
 `emacs my_experiment.sh`  
@@ -26,41 +17,23 @@ OR
 `vim my_experiment.sh`
 
 
-
 ## Submitting jobs to the queue
-
-
-
 Jobs are submitted to the system with the command below:
-
-
 
 `sbatch myscript.sh`
 
+See the page about Slurm Queueing System Commands for more information on creating job submission scripts.
 
 
-See the page about SLURM Queueing System Commands for more information on creating job submission scripts.
+## Slurm Partitions (Job Queues)
 
+Slurm Resource Manager has partitions which are job queues. These partitions has different limits and member nodes. You can see the active partitions and their limits with `sinfo` command on the cluster.
 
+SABANCI HPC Cluster’s Partitions:
 
-## SLURM Partitions (Job Queues)
-
-
-
-SLURM Resource Manager has partitions which are job queues. These partitions has different limits and member nodes.
-
-
-
-SABANCI HPC Cluster’s Partitions are listed below:
-
-
-
-These partitions and limits are subject to change in near future. Please check back here again. You can also see the active partitions and their limits with sinfo command on the cluster.
-
-
+These partitions and limits are subject to change in near future. Please check back here again. 
 
 ## [The SLURM Cheat Sheet](https://www.google.com/url?q=https://slurm.schedmd.com/pdfs/summary.pdf&sa=D&ust=1570008089861000)
-
 
 
 ## Essential SLURM Commands
