@@ -1,10 +1,10 @@
 site_name: Sabancı University SuperComputing Center
 nav:
-    - Quickstart Tutorial: index.md
-    - Using The Clusters:
+    - Quickstart: index.md
+    - Tutorials:
         - Using Tosun Cluster: tosun-index.md
         - Using SunHPC Cluster: sunum-index.md
-        - Scheduling with SLURM: slurm.md
+        - Scheduling with Slurm: slurm.md
         - Available Tools:
             - Matlab: bio.md
             - Materials Studio: material.md
