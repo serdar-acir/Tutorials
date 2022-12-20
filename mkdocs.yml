@@ -21,9 +21,9 @@ nav:
             - Tensorflow:
                 - General Information: tensorflow/tensorflow.md
                 - Tutorial: tensorflow/pdf/tensorflow-tutorial.pdf
-    - Performance Optimization Tips: performance.md
     - FAQ: faq.md
-    - Help: help.md
+    - Performance Optimization Tips: performance.md
     - SU-HPC Kullanım Politikası: HPC_Kullanım_Politikası.md
     - Feragatname: Feragetname.md
+    - Help: help.md
 theme: readthedocs
