@@ -1,4 +1,4 @@
-#MATLAB
+# General Information
 MATLAB integrates mathematical computing, visualization, and a powerful language to provide a flexible environment for technical computing.
 
 ##Installation / Help
