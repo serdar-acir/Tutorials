@@ -8,11 +8,19 @@ nav:
         - Available Tools:
             - Matlab: 
                 - General Information: matlab/matlab.md
-                - Tutorial: pdf/matlab-tutorial.pdf
-            - Materials Studio: ms.md
-            - Comsol: comsol.md
-            - Namd: namd.md
-            - Tensorflow: tensorflow.md
+                - Tutorial: matlab/pdf/matlab-tutorial.pdf
+            - Materials Studio: 
+                - General Information: ms/ms.md
+                - Tutorial: ms/pdf/ms-tutorial.pdf
+            - Comsol:
+                - General Information: comsol/comsol.md
+                - Tutorial: comsol/pdf/comsol-tutorial.pdf
+            - Namd: 
+                - General Information: namd/namd.md
+                - Tutorial: namd/pdf/namd-tutorial.pdf
+            - Tensorflow:
+                - General Information: tensorflow/tensorflow.md
+                - Tutorial: tensorflow/pdf/tensorflow-tutorial.pdf
     - FAQ: faq.md
     - Help: help.md
     - SU-HPC Kullanım Politikası: HPC_Kullanım_Politikası.md
