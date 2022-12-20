@@ -6,7 +6,7 @@ nav:
         - Using SunHPC Cluster: sunhpc-index.md
         - Scheduling with Slurm: slurm.md
         - Available Tools:
-            - Matlab: matlab.md
+            - Matlab: pdf/matlab-tutorial.pdf
             - Materials Studio: ms.md
             - Comsol: comsol.md
             - Namd: namd.md
