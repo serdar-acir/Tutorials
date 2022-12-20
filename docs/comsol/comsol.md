@@ -1,10 +1,10 @@
-#General Information
+# General Information
 An environment for modeling and simulating Scientific and Engineering problems.
 
-##License Information
+## License Information
 This software is licensed for up to 30 concurrent users.
 
-##Licensed modules:
+## Licensed modules:
 
   - COMSOL Multiphysics
   - AC/DC Module
@@ -26,14 +26,14 @@ This software is licensed for up to 30 concurrent users.
   - LiveLink™ for Excel®
   - LiveLink™ for SOLIDWORKS®
   
-##Usage Information
+## Usage Information
 This software is NOT in public use. 
 
-##Servers installed
+## Servers installed
 This software is installed on the all the HPC clusters. It can also be installed to any workstations or labtops.
 
-##Provider: 
+## Provider: 
 COMSOL Inc
 
-##Platform(s):
+## Platform(s):
 Windows, Linux, MacOS X
