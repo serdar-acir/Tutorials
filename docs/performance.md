@@ -1,7 +1,10 @@
 # Performans Optimization Tips
 Defining performance in HPC platforms includes both the program execution in means of speed and the total wait time until your job is accepted for execution by the system.
+
 For HPC environments performance optimization is probably the most important aspect after the proper functioning of the code. For example, sharing the same CPU cache for tasks that communicate with other may eliminate significant interconnect delays hence improving the performance. And separating independent tasks with a memory intensive workload onto separate sockets with a wider memory bandwidth may lead to performance improvements, leading to faster results. All these can be achieved by using appropriate workload scheduler commands for your own workload.
+
 In this short article I will talk about a few Slurm commands that you can play with to minimize both the computation time and the wait time.
+
 
 `** this article applies to linux batch scripts only`
 
