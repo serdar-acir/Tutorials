@@ -1,10 +1,10 @@
 site_name: Sabancı University SuperComputing Center
 nav:
     - Quickstart: index.md
+    - Scheduling with Slurm: slurm.md
     - Tutorials:
         - Using Tosun Cluster: tosun-index.md
         - Using SunHPC Cluster: sunhpc-index.md
-        - Scheduling with Slurm: slurm.md
         - Available Tools:
             - Matlab: 
                 - General Information: matlab/matlab.md
@@ -23,7 +23,7 @@ nav:
                 - Tutorial: tensorflow/pdf/tensorflow-tutorial.pdf
     - FAQ: faq.md
     - Performance Optimization Tips: performance.md
-    - SU-HPC Kullanım Politikası: HPC_Kullanım_Politikası.md
-    - Feragatname: Feragetname.md
+    - SU-HPC Kullanım Politikası (Turkish): HPC_Kullanım_Politikası.md
+    - Feragatname (Turkish): Feragetname.md
     - Help: help.md
 theme: readthedocs
