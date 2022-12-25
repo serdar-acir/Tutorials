@@ -1,3 +1,4 @@
+[![Documentation Status](https://readthedocs.org/projects/su-hpc-tutorials/badge/?version=latest)](https://su-hpc-tutorials.readthedocs.io/en/latest/?badge=latest)
 # Sabancı HPC Kümesi Kullanım Politikası ( Türkçe)
 - Tüm Sabancı Üniversitesi öğretim üyeleri, öğrencileri ve araştırmacıları yüksek performanslı hesaplama ihtiyacı duymaları durumunda, Sabancı HPC sistemlerini kullanabilir.
 - Dışarıdan kullanıcılar Sabancı Üniversitesi ile bağlantılı akademik veya endüstriyel işbirlikli akademik projelere dahil olmaları durumunda Sabancı HPC sistemlerini kullanabilir.
