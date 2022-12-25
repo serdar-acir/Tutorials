@@ -1,3 +1,4 @@
+[![Documentation Status](https://readthedocs.org/projects/su-hpc-tutorials/badge/?version=latest)](https://su-hpc-tutorials.readthedocs.io/en/latest/?badge=latest)
 ### How do I open an HPC Account?
 Please send an email to suhpcadmin@sabanciuniv.edu stating the software you are willing to use and the professor you are working with.
 ### Which cluster shall I choose?

@@ -1,3 +1,4 @@
+[![Documentation Status](https://readthedocs.org/projects/su-hpc-tutorials/badge/?version=latest)](https://su-hpc-tutorials.readthedocs.io/en/latest/?badge=latest)
 # General Information
 3D graphical environment for molecular modeling.
 

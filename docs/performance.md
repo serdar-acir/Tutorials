@@ -1,3 +1,4 @@
+[![Documentation Status](https://readthedocs.org/projects/su-hpc-tutorials/badge/?version=latest)](https://su-hpc-tutorials.readthedocs.io/en/latest/?badge=latest)
 # Performans Optimization Tips
 Defining performance in HPC platforms includes both the program execution in means of speed and the total wait time until your job is accepted for execution by the system.
 
@@ -15,8 +16,9 @@ For example to use all the 24 cores on a single CPU, on the command line use:
 
 ,and in the batch script, this translates as:
 
-`#SBATCH --tasks-per-node=1
-#SBATCH --cpus-per-task=24`
+`#SBATCH --tasks-per-node=1`
+
+`#SBATCH --cpus-per-task=24`
 
 This may delay the execution of your script if your demanded resources are not available. 
 If multi-threaded and your tool scales well with the number of CPU cores, you may want to expand to the next available CPU on the same socket.

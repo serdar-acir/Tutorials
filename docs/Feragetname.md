@@ -1,3 +1,4 @@
+[![Documentation Status](https://readthedocs.org/projects/su-hpc-tutorials/badge/?version=latest)](https://su-hpc-tutorials.readthedocs.io/en/latest/?badge=latest)
 # FERAGATNAME (Türkçe)
 - Arıza, beklenmeyen kaynak kesintisi veya herhangi bir sebepten ötürü HPC kaynaklarının devre dışı kalması sebebiyle çalışmaların gecikmesi veya proje çalışmalarının aksaması durumunda HPC yönetiminin herhangi bir sorumluluğu yoktur.
 - Sistemlerin önceden duyurulan periyodik bakımları sebebi ile belirtilen tarih ve saatte devam eden çalışmaların durdurulması ve çalışmalarının aksaması durumunda HPC yönetiminin herhangi bir sorumluluğu yoktur.

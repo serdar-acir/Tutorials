@@ -1,8 +1,9 @@
+[![Documentation Status](https://readthedocs.org/projects/su-hpc-tutorials/badge/?version=latest)](https://su-hpc-tutorials.readthedocs.io/en/latest/?badge=latest)
 # General Information
 MATLAB integrates mathematical computing, visualization, and a powerful language to provide a flexible environment for technical computing.
 
 ##Installation / Help
-You can find specific installation instructions at [SU IT pages.]https://mysu.sabanciuniv.edu/it/en/software/matlab
+You can find specific installation instructions at [SU IT pages.](https://mysu.sabanciuniv.edu/it/en/software/matlab)
 - Help for Windows Installation
 - Help for MacOS X Installation
 - Help for Linux Installation
