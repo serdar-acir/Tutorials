@@ -15,8 +15,8 @@ For example to use all the 24 cores on a single CPU, on the command line use:
 
 ,and in the batch script, this translates as:
 
-`#SBATCH --tasks-per-node=1
-#SBATCH --cpus-per-task=24`
+`#SBATCH --tasks-per-node=1`
+`#SBATCH --cpus-per-task=24`
 
 This may delay the execution of your script if your demanded resources are not available. 
 If multi-threaded and your tool scales well with the number of CPU cores, you may want to expand to the next available CPU on the same socket.
