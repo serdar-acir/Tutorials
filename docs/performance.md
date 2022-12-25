@@ -1,3 +1,4 @@
+[![Documentation Status](https://readthedocs.org/projects/su-hpc-tutorials/badge/?version=latest)](https://su-hpc-tutorials.readthedocs.io/en/latest/?badge=latest)
 # Performans Optimization Tips
 Defining performance in HPC platforms includes both the program execution in means of speed and the total wait time until your job is accepted for execution by the system.
 
