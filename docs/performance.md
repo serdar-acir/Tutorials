@@ -16,6 +16,7 @@ For example to use all the 24 cores on a single CPU, on the command line use:
 ,and in the batch script, this translates as:
 
 `#SBATCH --tasks-per-node=1`
+
 `#SBATCH --cpus-per-task=24`
 
 This may delay the execution of your script if your demanded resources are not available. 
