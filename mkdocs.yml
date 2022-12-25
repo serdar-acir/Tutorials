@@ -1,22 +1,29 @@
-site_name: Sabancı HPC Tutorials
+site_name: Sabancı University SuperComputing Center
 nav:
-    - SU-HPC: index.md
-    - Using TOSUN Cluster:
-        - Quickstart: tosun/index.md
-        - Scheduling with SLURM: tosun/slurm.md
+    - Quickstart: index.md
+    - Scheduling with Slurm: slurm.md
+    - Tutorials:
+        - Using Tosun Cluster: tosun-index.md
+        - Using SunHPC Cluster: sunhpc-index.md
         - Available Tools:
-            - Bioinformatics: tosun/bio.md
-            - Material Science: tosun/material.md
-            - Machine Learning: tosun/learning.md
-            - Data Science: tosun/data.md
-    - Using SUNUM Cluster:
-        - Quickstart: sunum/index.md
-        - Scheduling with SLURM: sunum/slurm.md
-        - Available Tools:
-            - Bioinformatics: sunum/bio.md
-            - Material Science: sunum/material.md
-            - Machine Learning: sunum/learning.md
-            - Data Science: sunum/data.md
+            - Matlab: 
+                - General Information: matlab/matlab.md
+                - Tutorial: matlab/pdf/matlab-tutorial.pdf
+            - Materials Studio: 
+                - General Information: ms/ms.md
+                - Tutorial: ms/pdf/ms-tutorial.pdf
+            - Comsol:
+                - General Information: comsol/comsol.md
+                - Tutorial: comsol/pdf/comsol-tutorial.pdf
+            - Namd: 
+                - General Information: namd/namd.md
+                - Tutorial: namd/pdf/namd-tutorial.pdf
+            - Tensorflow:
+                - General Information: tensorflow/tensorflow.md
+                - Tutorial: tensorflow/pdf/tensorflow-tutorial.pdf
     - FAQ: faq.md
+    - Performance Optimization Tips: performance.md
+    - SU-HPC Kullanım Politikası (Turkish): HPC_Kullanım_Politikası.md
+    - Feragatname (Turkish): Feragetname.md
     - Help: help.md
 theme: readthedocs
