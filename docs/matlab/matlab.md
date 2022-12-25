@@ -1,3 +1,4 @@
+[![Documentation Status](https://readthedocs.org/projects/su-hpc-tutorials/badge/?version=latest)](https://su-hpc-tutorials.readthedocs.io/en/latest/?badge=latest)
 # General Information
 MATLAB integrates mathematical computing, visualization, and a powerful language to provide a flexible environment for technical computing.
 
