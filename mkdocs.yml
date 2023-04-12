@@ -8,7 +8,7 @@ nav:
         - Available Tools:
             - Matlab: 
                 - General Information: matlab/matlab.md
-                - Tutorial: matlab/pdf/matlab-tutorial.pdf
+                - Installation Tutorial: matlab/pdf/matlab-tutorial.pdf
                 - Slurm Wrapper Files: matlab/pdf/matlab-parallel-slurm-plugin-main.zip
             - Materials Studio: 
                 - General Information: ms/ms.md
