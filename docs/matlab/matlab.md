@@ -3,7 +3,7 @@
 MATLAB integrates mathematical computing, visualization, and a powerful language to provide a flexible environment for technical computing.
 
 ##Installation / Help
-You can find specific installation instructions at [SU IT pages.](https://mysu.sabanciuniv.edu/it/en/software/matlab)
+You can find specific installation instructions at [Tutorial pages.](https://su-hpc-tutorials.readthedocs.io/en/latest/matlab/pdf/matlab-tutorial.pdf)
 - Help for Windows Installation
 - Help for MacOS X Installation
 - Help for Linux Installation
