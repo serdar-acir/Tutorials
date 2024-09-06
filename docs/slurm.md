@@ -1,24 +1,16 @@
-## SLURM Job Submission at TOSUN Cluster
+[![Documentation Status](https://readthedocs.org/projects/su-hpc-tutorials/badge/?version=latest)](https://su-hpc-tutorials.readthedocs.io/en/latest/?badge=latest)
+## Slurm Job Submission at SU-HPC Cluster
 
-
-
-You will find SLURM submission script templates in a the folder: `/cta/share/jobscripts`
-
-
+On Tosun cluster you can find Slurm submission script templates in a the folder: `/cta/share/jobscripts`
 
 Copy the one you need to your work folder and modify it as required:
 
 
+`mkdir /$HOME/<username>/workfolder`
 
-`mkdir /cta/users/<username>/workfolder`
+`cd /$HOME/<username>/workfolder/`
 
-
-
-`cd /cta/users/<username>/workfolder/`
-
-
-
-`cp /cta/share/jobscripts/example_submit.sh /cta/users/<username>/workfolder/my_experiment.sh`
+`cp /cta/share/jobscripts/example_submit.sh /$HOME/<username>/workfolder/my_experiment.sh`
 
 
 `emacs my_experiment.sh`  
@@ -26,44 +18,22 @@ OR
 `vim my_experiment.sh`
 
 
-
 ## Submitting jobs to the queue
-
-
-
 Jobs are submitted to the system with the command below:
 
+`sbatch myscript.sh`
+
+See the page about Slurm Queueing System Commands for more information on creating job submission scripts.
 
 
-`sbatch myscript.sh`
+## Slurm Partitions (Job Queues)
+
+Slurm Resource Manager has partitions which are job queues. These partitions has different limits and member nodes. You can see the active partitions and their limits with `sinfo` command on the cluster.
+
+## [The Slurm Cheat Sheet](https://www.google.com/url?q=https://slurm.schedmd.com/pdfs/summary.pdf&sa=D&ust=1570008089861000)
 
 
-
-See the page about SLURM Queueing System Commands for more information on creating job submission scripts.
-
-
-
-## SLURM Partitions (Job Queues)
-
-
-
-SLURM Resource Manager has partitions which are job queues. These partitions has different limits and member nodes.
-
-
-
-SABANCI HPC Cluster’s Partitions are listed below:
-
-
-
-These partitions and limits are subject to change in near future. Please check back here again. You can also see the active partitions and their limits with sinfo command on the cluster.
-
-
-
-## [The SLURM Cheat Sheet](https://www.google.com/url?q=https://slurm.schedmd.com/pdfs/summary.pdf&sa=D&ust=1570008089861000)
-
-
-
-## Essential SLURM Commands
+## Essential Slurm Commands
 
 | Command | Description | Example
 | --------| ----------- | --------|
@@ -73,14 +43,9 @@ These partitions and limits are subject to change in near future. Please check b
 | `squeue -u [userid]` | List running or pending jobs | `$ squeue -u mdemirkol`
 
 
+## Submitting a Slurm Job Script
 
-## Submitting a SLURM Job Script
-
-
-
-The job flags are used with `SBATCH` command.  The syntax for the SLURM directive in a script is  `#SBATCH`.  Some of the flags are used with the `srun` and `salloc` commands, as well for interactive jobs.
-
-
+The job flags are used with `SBATCH` command.  The syntax for the Slurm directive in a script is  `#SBATCH`.  Some of the flags are used with the `srun` and `salloc` commands, as well for interactive jobs.
 
 <a id="t.3dfacbe3b6b4ac376d3dc1e2da925d8ec90b580e"></a><a id="t.1"></a>
 
@@ -154,13 +119,13 @@ The job flags are used with `SBATCH` command.  The syntax for the SLURM directi
 
 <td class="c35" colspan="1" rowspan="1">
 
-<span class="c43 c45 c7"> --qos=short
+<span class="c43 c45 c7"> --qos=short
 
 </td>
 
 <td class="c1" colspan="1" rowspan="1">
 
-<span class="c7 c73">QOS is quality of service value<span class="c43 c45 c7"> (limits or priority boost)
+<span class="c7 c73">QOS is quality of service value<span class="c43 c45 c7"> (limits or priority boost)
 
 </td>
 
@@ -300,7 +265,7 @@ The job flags are used with `SBATCH` command.  The syntax for the SLURM directi
 
 <td class="c1" colspan="1" rowspan="1">
 
-<span class="c43 c45 c7">Memory limit per compute node for the  job.  Do not use with mem-per-cpu flag.
+<span class="c43 c45 c7">Memory limit per compute node for the  job.  Do not use with mem-per-cpu flag.
 
 </td>
 
@@ -328,7 +293,7 @@ The job flags are used with `SBATCH` command.  The syntax for the SLURM directi
 
 <td class="c1" colspan="1" rowspan="1">
 
-<span class="c43 c45 c7">Per core memory limit.  Do not use the mem flag,
+<span class="c43 c45 c7">Per core memory limit.  Do not use the mem flag,
 
 </td>
 
@@ -462,7 +427,7 @@ The job flags are used with `SBATCH` command.  The syntax for the SLURM directi
 
 <td class="c35" colspan="1" rowspan="1">
 
-<span class="c43 c45 c7">--mail-user=username@foo.com
+<span class="c43 c45 c7">--mail-user=username@sabanciuniv.edu
 
 </td>
 
@@ -516,37 +481,28 @@ The job flags are used with `SBATCH` command.  The syntax for the SLURM directi
 
 ## 
 
-## Running a GUI on the Cluster (X11 Forwarding) (soon..)
+## Running a GUI on the Cluster 
 
-
-
-Some applications provide the capability to interact with a graphical user interface (GUI). It is not typical of parallel jobs, but large-memory applications and computationally steered applications can offer such capability. With Slurm, once a resource allocation is granted for an interactive session (or a batch job when the submitting terminal if left logged in), we can use srun to provide X11 graphical forwarding all the way from the compute nodes to our desktop using srun --x11 
+Some applications provide the capability to interact with a graphical user interface (GUI). Large-memory applications and computationally steered applications can offer such capability. With Slurm, once a resource allocation is granted for an interactive session (or a batch job when the submitting terminal if left logged in), we can use `srun` to provide X11 graphical forwarding all the way from the compute nodes to our desktop using srun.
 
 
 
 For example, to run an X terminal:
 
-
-
 `srun --x11 -A users -p short -n1 --qos=users --pty $SHELL`
 
-Note that the user must have X11 forwarded to the login node for this to work -- this can be checked by running `xclock` at the command line.
+Note that the user must have X11 forwarded to the login node for this to work -- this can be checked by running `xclock` at the command line.
 
-Additionally, the --x11argument can be augmented in this fashion --x11=[batch|first|last|all] to the following effects:
+Additionally, the --x11argument can be augmented in this fashion --x11=[batch|first|last|all] to the following effects:
 
 *   --x11=first This is the default, and provides X11 forwarding to the first compute hosts allocated.
-*   --x11=last This provides X11 forwarding to the last of the compute hosts allocated.
-*   --x11=all This provides X11 forwarding from all allocated compute hosts, which can be quite resource heavy and is an extremely rare use-case.
-*   --x11=batch This supports use in a batch job submission, and will provide X11 forwarding to the first node allocated to a batch job. The user must leave open the X11 forwarded login node session where they submitted the job.
+*   --x11=last This provides X11 forwarding to the last of the compute hosts allocated.
+*   --x11=all This provides X11 forwarding from all allocated compute hosts, which can be quite resource heavy and is an extremely rare use-case.
+*   --x11=batch This supports use in a batch job submission, and will provide X11 forwarding to the first node allocated to a batch job. The user must leave open the X11 forwarded login node session where they submitted the job.
 
 ## Job Reason Codes
 
-
-
 These codes identify the reason that a job is waiting for execution. A job may be waiting for more than one reason, in which case only one of those reasons is displayed.
-
-
-
 
 
 <a id="t.9aa0fe54d84fd9007f94a96abe92ee9227ca6cfc"></a><a id="t.2"></a>
@@ -703,7 +659,7 @@ CF
 
 <td class="c6" colspan="1" rowspan="1">
 
- Job has been allocated resources, but are waiting for them to become ready for use
+ Job has been allocated resources, but are waiting for them to become ready for use
 
 </td>
 
@@ -971,10 +927,6 @@ Please follow the links for more...
 
 ## QoS settings
 
-
-
-
-
 <a id="t.001774065333135c85f7249b6b7fd6da4434d52b"></a><a id="t.3"></a>
 
 <table class="c52">
@@ -1065,47 +1017,32 @@ Please follow the links for more...
 
 
 
-
-
 # <span class="c43 c72 c40">Software
-
-
 
 ## System software
 
-
-
-*   Ubuntu 16.04 LTS  - operating system
-*   [SLURM resource manager](https://www.google.com/url?q=https://slurm.schedmd.com/&sa=D&ust=1570008089922000)
-
+*   Various operating systems are being used in our systems. If you need a particular OS please let us know.
+*   [Slurm resource manager](https://www.google.com/url?q=https://slurm.schedmd.com/&sa=D&ust=1570008089922000)
 
 
 ### Compilers and parallel programming libraries
 
-
-
 *   GNU Compiler (GCC, GFortran)
 *   Java, Python, Perl, Ruby
 *   OpenMPI - library for MPI message passing for use in parallel programming over Infiniband and Ethernet
-*   ...and more. We will be updating this document in future.
+*   ...and more.
 
 ### 
 
 ### Libraries
 
-
-
-*   Please run the `module avail` command from your ssh console to view a list of available applications.
-
+*   Please run the `module avail` command from your ssh console to view a list of available applications.
 
 
 ### Application software
 
-
-
 *   Gaussian, Blast, Namd, Gromacs and many more.
-*   Please run the `module avail` command from your ssh console to view a list of available applications.
-
+*   Please run the `module avail` command from your ssh console to view a list of available applications.
 
 
 
